@@ -84,14 +84,37 @@ ADR Tower PIK adalah ruang perkantoran modern dengan fasilitas lengkap, termasuk
           </div>
         </nav>
       </div></header>
-    <section class="u-clearfix u-section-1" id="sec-94aa">
-      <div class="u-clearfix u-sheet u-sheet-1">
-        <div class="u-clearfix u-custom-html u-expanded-width-xs u-custom-html-1">
-          <div style="position: relative; width: 100%; padding-top: 177.78%; /* Aspect ratio: 1600/900 * 100 */">
-            <iframe src="https://rss.app/embed/v1/feed/avqajULQVEOFOx7V" frameborder="0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;"></iframe>
-          </div>
-        </div>
-      </div>
+<section class="u-clearfix u-section-1" id="sec-94aa">
+    <div class="u-clearfix u-sheet u-sheet-1">
+        <h2 class="u-align-center u-text u-text-1">Latest News</h2>
+        <div id="rss-feed"></div>
+    </div>
+</section>
+
+<script>
+    const rssUrl = 'https://riviewanything.blogspot.com/feeds/posts/default?alt=rss';
+
+    fetch(rssUrl)
+        .then(response => response.text())
+        .then(str => new window.DOMParser().parseFromString(str, "text/xml"))
+        .then(data => {
+            const items = data.querySelectorAll("item");
+            let html = '';
+            items.forEach(el => {
+                const title = el.querySelector("title").textContent;
+                const link = el.querySelector("link").textContent;
+                const description = el.querySelector("description").textContent;
+                html += `
+                    <div class="rss-item">
+                        <h3><a href="${link}" target="_blank">${title}</a></h3>
+                        <p>${description}</p>
+                    </div>
+                `;
+            });
+            document.getElementById("rss-feed").innerHTML = html;
+        })
+        .catch(err => console.error('Error fetching RSS feed:', err));
+</script>
     </section>
     <section class="skrollable skrollable-between u-align-center u-clearfix u-container-align-center u-gradient u-section-2" id="sec-7ab7">
       <div class="u-clearfix u-sheet u-sheet-1">
