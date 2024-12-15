@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Terbaru</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        h2 { color: #333; }
+        h3 { color: #555; }
+        p { color: #777; }
+    </style>
+</head>
+<body>
+    <h1>Blog Terbaru dari Riview Anything</h1>
+    <div id="blog-posts">Loading...</div>
+
+    <script>
+        fetch('https://riviewanything.blogspot.com/feeds/posts/default?alt=json')
+            .then(response => response.json())
+            .then(data => {
+                const posts = data.feed.entry;
+                let output = '<h2>Postingan Terbaru</h2>';
+                posts.forEach(post => {
+                    output += `
+                        <h3>${post.title.$t}</h3>
+                        <p>${post.content.$t}</p>
+                        <a href="${post.link[2].href}">Baca Selengkapnya</a>
+                        <hr>
+                    `;
+                });
+                document.getElementById('blog-posts').innerHTML = output;
+            })
+            .catch(error => {
+                console.error('Error fetching the blog posts:', error);
+                document.getElementById('blog-posts').innerHTML = 'Gagal memuat postingan.';
+            });
+    </script>
+</body>
+</html>
