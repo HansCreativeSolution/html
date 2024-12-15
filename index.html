@@ -1,15 +1,48 @@
 <!DOCTYPE html>
-<html>
+<html lang="id">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Update News</title>
-  <link rel="stylesheet" href="style.css"> </head>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2em;
+      margin: 20px 0;
+    }
+
+    #imageboard-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 10px;
+    }
+
+    rssapp-imageboard {
+      width: 100%;
+      max-width: 600px; /* Atur lebar maksimum sesuai kebutuhan */
+      margin: 10px;
+      border: 1px solid #ccc; /* Tambahkan border untuk visualisasi */
+      border-radius: 5px; /* Tambahkan sudut melengkung */
+      background-color: #fff; /* Latar belakang putih */
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Tambahkan bayangan */
+    }
+  </style>
+</head>
 <body>
   <h1>Imageboard Feed</h1>
 
-  <div id="imageboard-container"></div>
+  <div id="imageboard-container">
+    <rssapp-imageboard id="3DVwwyZc7XvAp5HK"></rssapp-imageboard>
+  </div>
 
   <script src="https://widget.rss.app/v1/imageboard.js" type="text/javascript" async></script>
-  <rssapp-imageboard id="3DVwwyZc7XvAp5HK"></rssapp-imageboard>
-
 </body>
 </html>
