@@ -1,11 +1,21 @@
-.post-container {
-  margin: 20px;
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
 }
 
-h2 {
-  color: #333;
+h1 {
+  text-align: center;
+  font-size: 2em;
 }
 
-p {
-  color: #666;
+#imageboard-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+rssapp-imageboard {
+  width: 100%;
+  max-width: 600px; /* Atur lebar maksimum sesuai kebutuhan */
+  margin: 10px;
 }
