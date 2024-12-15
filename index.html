@@ -1,37 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Blog Saya dari Blogger</title>
-  <link rel="stylesheet" href="style.css">
-</head>
+    <title>Halaman dengan Feed RSS</title>
+    <link rel="stylesheet" href="style.css"> </head>
 <body>
-  <div class="post-container">
-    </div>
+    <h1>Berita Terbaru</h1>
 
-  <script>
-    fetch('https://riviewanything.blogspot.com/feeds/posts/default')
-      .then(response => response.text())
-      .then(data => {
-        const parser = new DOMParser();
-        const xmlDoc = parser.parseFromString(data, 'text/xml');
+    <div id="rss-feed-container">
+        </div>
 
-        const items = xmlDoc.querySelectorAll('item');
-        const container = document.querySelector('.post-container');
+    <script src="https://widget.rss.app/v1/list.js" async></script>
+    <rssapp-list id="lTjIcclgboNYDdmt"></rssapp-list>
 
-        items.forEach(item => {
-          const title = item.querySelector('title').textContent;
-          const link = item.querySelector('link').textContent;
-          const description = item.querySelector('description').textContent;
-
-          const newPost = document.createElement('div');
-          newPost.innerHTML = `
-            <h2>${title}</h2>
-            <p>${description}</p>
-            <a href="${link}">Baca Selengkapnya</a>
-          `;
-          container.appendChild(newPost);
-        });
-      });
-  </script>
+    <script>
+        // Anda bisa menambahkan JavaScript tambahan di sini jika diperlukan
+        // Misalnya, untuk melakukan kustomisasi tampilan atau menambahkan interaktivitas
+    </script>
 </body>
 </html>
