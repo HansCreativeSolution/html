@@ -1,48 +1,251 @@
-<!DOCTYPE html>
-<html lang="id">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Update News</title>
-  <link rel="stylesheet" href="style.css">
+<html class="scroll-smooth" lang="id">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   Hans Database Fixer - Aplikasi Android untuk Memperbaiki dan Membersihkan Database Nomor HP
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
   <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #f4f4f4;
-    }
-
-    h1 {
-      text-align: center;
-      font-size: 2em;
-      margin: 20px 0;
-    }
-
-    #imageboard-container {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      padding: 10px;
-    }
-
-    rssapp-imageboard {
-      width: 100%;
-      max-width: 600px; /* Atur lebar maksimum sesuai kebutuhan */
-      margin: 10px;
-      border: 1px solid #ccc; /* Tambahkan border untuk visualisasi */
-      border-radius: 5px; /* Tambahkan sudut melengkung */
-      background-color: #fff; /* Latar belakang putih */
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Tambahkan bayangan */
+   body {
+      font-family: 'Inter', sans-serif;
     }
   </style>
-</head>
-<body>
-  <h1>Imageboard Feed</h1>
-
-  <div id="imageboard-container">
-    <rssapp-imageboard id="3DVwwyZc7XvAp5HK"></rssapp-imageboard>
-  </div>
-
-  <script src="https://widget.rss.app/v1/imageboard.js" type="text/javascript" async></script>
-</body>
+ </head>
+ <body class="bg-gray-50 text-gray-800">
+  <header class="bg-white shadow-md sticky top-0 z-50">
+   <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+    <a class="text-2xl font-bold text-indigo-600" href="#">
+     Hans Creative Solution
+    </a>
+    <nav class="hidden md:flex space-x-8 font-semibold text-gray-700">
+     <a class="hover:text-indigo-600 transition" href="#produk" style="">
+      Produk
+     </a>
+     <a class="hover:text-indigo-600 transition" href="#deskripsi" style="">
+      Deskripsi
+     </a>
+     <a class="hover:text-indigo-600 transition" href="#fitur">
+      Fitur
+     </a>
+     <a class="hover:text-indigo-600 transition" href="#petunjuk">
+      Petunjuk
+     </a>
+     <a class="hover:text-indigo-600 transition" href="#kontak">
+      Kontak
+     </a>
+    </nav>
+   </div>
+  </header>
+  <main class="max-w-7xl mx-auto px-6 py-12">
+   <section class="text-center mb-16">
+    <h1 class="text-4xl md:text-5xl font-extrabold text-indigo-600 mb-4" style="">
+     Your Solution
+    </h1>
+    <p class="text-lg md:text-xl text-gray-700 max-w-3xl mx-auto">
+     Hans Creative Solution bergerak dalam bidang creative, baik dalam segi pembuatan aplikasi maupun desain-desain yang inovatif dan menarik. Kami berkomitmen untuk memberikan solusi digital yang efektif dan estetis, membantu bisnis dan individu untuk berkembang melalui teknologi dan kreativitas.
+    </p>
+    <p class="text-lg md:text-xl text-gray-700 max-w-3xl mx-auto mt-4">
+     Dengan pengalaman luas dalam pengembangan aplikasi Android dan desain grafis, kami menghadirkan produk dan layanan berkualitas tinggi yang mudah digunakan dan sesuai dengan kebutuhan Anda. Dari aplikasi database fixer hingga desain branding, Hans Creative Solution siap menjadi mitra kreatif Anda.
+    </p>
+    <a class="inline-block mt-8 px-8 py-3 bg-indigo-600 text-white font-semibold rounded-lg shadow-md hover:bg-indigo-700 transition" href="https://wa.link/5n1bc0" rel="noopener noreferrer" target="_blank">
+     Hubungi Kami via WhatsApp
+    </a>
+   </section>
+   <section class="mb-20" id="produk">
+    <h2 class="text-3xl font-bold text-gray-900 mb-10 text-center">
+     Produk Kami
+    </h2>
+    <div class="grid gap-10 md:grid-cols-3">
+     <article class="bg-white rounded-lg shadow-md p-6 flex flex-col items-center text-center">
+      <img alt="Tampilan antarmuka aplikasi Hans Database Fixer dengan grafik dan daftar nomor HP di layar ponsel Android" class="rounded-md mb-6 w-full object-cover" height="200" loading="lazy" src="https://storage.googleapis.com/a1aa/image/d935f540-03e5-4a83-df68-4205663e556a.jpg" width="300"/>
+      <h3 class="text-xl font-semibold mb-2">
+       Hans Database Fixer
+      </h3>
+      <p class="text-gray-600 mb-4">
+       Aplikasi Android untuk membersihkan, memperbaiki, dan mengekstrak nomor HP dari file Excel dengan cepat dan akurat.
+      </p>
+      <a class="mt-auto inline-block px-6 py-2 bg-indigo-600 text-white rounded-md font-semibold hover:bg-indigo-700 transition" href="https://wa.link/5n1bc0" rel="noopener noreferrer" target="_blank">
+       Pesan Sekarang
+      </a>
+     </article>
+     <article class="bg-white rounded-lg shadow-md p-6 flex flex-col items-center text-center">
+      <img alt="Ilustrasi aplikasi blast WhatsApp Android terbaru dengan ikon ponsel dan pesan" class="rounded-md mb-6 w-full object-cover" height="200" loading="lazy" src="https://storage.googleapis.com/a1aa/image/a0a13fe6-7931-4edc-45b6-841d44c2d2a7.jpg" width="300"/>
+      <h3 class="text-xl font-semibold mb-2">
+       Aplikasi Blast WA Android Terbaru
+      </h3>
+      <p class="text-gray-600 mb-4">
+       Kirim pesan WhatsApp massal dengan mudah dan cepat menggunakan aplikasi blast WA terbaru untuk Android. Efisien dan aman digunakan.
+      </p>
+      <a class="mt-auto inline-block px-6 py-2 bg-indigo-600 text-white rounded-md font-semibold hover:bg-indigo-700 transition" href="https://wa.link/e5gkhx" rel="noopener noreferrer" target="_blank">
+       Lihat Detail
+      </a>
+     </article>
+     <article class="bg-white rounded-lg shadow-md p-6 flex flex-col items-center text-center">
+      <img alt="Gambar ilustrasi pembuatan aplikasi android dengan ikon kode dan ponsel" class="rounded-md mb-6 w-full object-cover" height="200" loading="lazy" src="https://storage.googleapis.com/a1aa/image/45829736-5280-45f2-9e88-bc688761e818.jpg" width="300"/>
+      <h3 class="text-xl font-semibold mb-2">
+       Pembuatan Aplikasi Android Lainnya
+      </h3>
+      <p class="text-gray-600 mb-4">
+       Kami juga menyediakan jasa pembuatan aplikasi Android custom sesuai kebutuhan bisnis dan personal Anda. Hubungi kami untuk konsultasi gratis.
+      </p>
+      <a class="mt-auto inline-block px-6 py-2 bg-indigo-600 text-white rounded-md font-semibold hover:bg-indigo-700 transition" href="https://wa.link/1xlk30" rel="noopener noreferrer" target="_blank">
+       Hubungi Kami
+      </a>
+     </article>
+    </div>
+   </section>
+   <section class="mb-20 max-w-4xl mx-auto" id="deskripsi">
+    <h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">
+     Deskripsi Produk
+    </h2>
+    <div class="bg-white rounded-lg shadow-md p-8 space-y-6">
+     <div>
+      <h3 class="text-xl font-semibold text-indigo-600 mb-2">
+       Nama Aplikasi:
+      </h3>
+      <p class="text-gray-700 text-lg font-semibold mb-4">
+       🎯 Hans Database Fixer
+      </p>
+      <h3 class="text-xl font-semibold text-indigo-600 mb-2">
+       Developer:
+      </h3>
+      <p class="text-gray-700 text-lg font-semibold">
+       📍 Hans Creative Solution
+      </p>
+     </div>
+     <div>
+      <h3 class="text-xl font-semibold text-indigo-600 mb-2">
+       Deskripsi Singkat:
+      </h3>
+      <p class="text-gray-700 text-lg leading-relaxed">
+       Hans Database Fixer adalah aplikasi Android yang membantu kamu membersihkan, memperbaiki, dan mengekstrak nomor HP dari file Excel dengan cepat dan akurat. Cocok untuk kebutuhan database WhatsApp, SMS marketing, maupun validasi kontak.
+      </p>
+     </div>
+    </div>
+   </section>
+   <section class="mb-20 max-w-4xl mx-auto" id="fitur">
+    <h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">
+     Fitur Utama
+    </h2>
+    <ul class="bg-white rounded-lg shadow-md p-8 list-disc list-inside space-y-4 text-gray-700 text-lg max-w-3xl mx-auto">
+     <li>
+      Import File Excel (.xlsx) dari memori perangkat
+     </li>
+     <li>
+      Ekstrak semua nomor HP secara otomatis
+     </li>
+     <li>
+      Konversi nomor dari format 08xxx menjadi 628xxx
+     </li>
+     <li>
+      Filter nomor duplikat dan nomor tidak valid
+     </li>
+     <li>
+      Simpan hasil sebagai file Excel baru yang bersih
+     </li>
+     <li>
+      Petunjuk pemakaian langsung dari aplikasi untuk kemudahan pengguna
+     </li>
+     <li>
+      Kompatibel dengan semua versi Android modern
+     </li>
+    </ul>
+   </section>
+   <section class="mb-20 max-w-4xl mx-auto" id="petunjuk">
+    <h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">
+     Petunjuk Penggunaan
+    </h2>
+    <ol class="bg-white rounded-lg shadow-md p-8 list-decimal list-inside space-y-4 text-gray-700 text-lg max-w-3xl mx-auto">
+     <li>
+      Buka file Excel kamu terlebih dahulu di aplikasi WPS Office.
+     </li>
+     <li>
+      Ubah semua kolom ke format Text (Teks).
+     </li>
+     <li>
+      Gunakan fitur Find &amp; Replace untuk menghapus tanda "=".
+     </li>
+     <li>
+      Tambahkan satu baris di atas file Excel.
+     </li>
+     <li>
+      Simpan kembali file tersebut.
+     </li>
+     <li>
+      Import file tersebut ke aplikasi Hans Database Fixer.
+     </li>
+     <li>
+      Simpan hasilnya ke file baru yang bersih dan siap digunakan.
+     </li>
+    </ol>
+   </section>
+   <section class="mb-20 max-w-4xl mx-auto" id="cocok">
+    <h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">
+     Cocok Untuk
+    </h2>
+    <ul class="bg-white rounded-lg shadow-md p-8 list-disc list-inside space-y-4 text-gray-700 text-lg max-w-3xl mx-auto text-center">
+     <li>
+      Freelancer data entry
+     </li>
+     <li>
+      Admin komunitas WhatsApp
+     </li>
+     <li>
+      Agen marketing digital
+     </li>
+     <li>
+      UMKM dan pelaku bisnis
+     </li>
+    </ul>
+   </section>
+   <section class="mb-20 max-w-4xl mx-auto" id="output">
+    <h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">
+     Output
+    </h2>
+    <p class="bg-white rounded-lg shadow-md p-8 text-gray-700 text-lg max-w-3xl mx-auto text-center">
+     File Excel bersih berisi hanya nomor HP valid, dengan format siap pakai untuk tools broadcast dan database WhatsApp.
+    </p>
+   </section>
+   <section class="mb-20 max-w-3xl mx-auto bg-white rounded-lg shadow-md p-8" id="kontak">
+    <h2 class="text-3xl font-bold text-gray-900 mb-6 text-center">
+     Hubungi Kami
+    </h2>
+    <p class="text-center text-gray-700 mb-6 text-lg">
+     Untuk pemesanan, konsultasi, atau pertanyaan lainnya, silakan hubungi kami melalui WhatsApp:
+    </p>
+    <div class="flex flex-col space-y-6">
+     <a class="flex items-center justify-center space-x-3 px-6 py-3 bg-green-500 hover:bg-green-600 text-white font-semibold rounded-lg shadow-md transition" href="https://wa.link/5n1bc0" rel="noopener noreferrer" target="_blank">
+      <i class="fab fa-whatsapp fa-lg">
+      </i>
+      <span>
+       Hans Database Fixer
+      </span>
+     </a>
+     <a class="flex items-center justify-center space-x-3 px-6 py-3 bg-green-500 hover:bg-green-600 text-white font-semibold rounded-lg shadow-md transition" href="https://wa.link/e5gkhx" rel="noopener noreferrer" target="_blank">
+      <i class="fab fa-whatsapp fa-lg">
+      </i>
+      <span>
+       Aplikasi Blast WA Android Terbaru
+      </span>
+     </a>
+     <a class="flex items-center justify-center space-x-3 px-6 py-3 bg-green-500 hover:bg-green-600 text-white font-semibold rounded-lg shadow-md transition" href="https://wa.link/1xlk30" rel="noopener noreferrer" target="_blank">
+      <i class="fab fa-whatsapp fa-lg">
+      </i>
+      <span>
+       Pembuatan Aplikasi Android Lainnya
+      </span>
+     </a>
+    </div>
+   </section>
+  </main>
+  <footer class="bg-white border-t border-gray-200 py-6">
+   <div class="max-w-7xl mx-auto px-6 text-center text-gray-600 text-sm">
+    © 2024 Hans Creative Solution. All rights reserved.
+   </div>
+  </footer>
+ </body>
 </html>
